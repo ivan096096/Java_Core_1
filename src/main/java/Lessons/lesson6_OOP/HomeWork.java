@@ -5,8 +5,10 @@ package Lessons.lesson6_OOP;
 public class HomeWork {
     public static void main(String[] args) {
         simpleZoo();
+        System.out.println(Animals.getCount() +" "+ "Животных!!!");
+        System.out.println(Cat.getCountCat() +" "+ "Кошачьева Вида!!!");
+       System.out.println(Dog.getcountDog() +" "+ "Собачьева Вида!!!");
     }
-
     public static void simpleZoo() {
 
 

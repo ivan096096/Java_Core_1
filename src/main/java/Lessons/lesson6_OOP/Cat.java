@@ -4,11 +4,15 @@ package Lessons.lesson6_OOP;
 public class Cat extends Animals {
 
     protected final int max_run = 185;// Максимальное ограничение
-
+    public static int countCat ;
 
    public Cat(String name, String color) {
         super(name, color);
+        countCat++;
      }
+       public static int getCountCat () {
+           return countCat;
+       }
 
     //Сравнение дистанции бега у кота
     public void run(int lenght) {

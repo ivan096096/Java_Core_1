@@ -4,10 +4,15 @@ public class Dog extends Animals {
 
     protected final int max_run = 450;//максимальная дистанция бега
     protected final int max_swim = 10;//максимальная дистанция плавания
+    public static int countDog ;
 
     public Dog(String name,String color) {
         super(name, color);
+        countDog++;
         }
+    public static int getcountDog() {
+        return countDog;
+    }
     //Сравнение дистанции бега у собаки
     public void run(int lenght) {
        if (lenght <= max_run){
